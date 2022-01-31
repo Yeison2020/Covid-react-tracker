@@ -14,14 +14,15 @@ const App = () => {
   });
   useEffect(() => {
     fetch(url)
-      .then((resp) => resp.json)
+      .then((resp) => resp.json())
       .then((data) => {
-        const { data: confirmed, recovered, deaths, lastUpdate } = data;
+        console.log(data);
+        const { data: image, recovered, confirmed, deaths, lastUpdate } = data;
         setData({
-          confirmed: confirmed,
-          recovered: recovered,
-          deaths: deaths,
-          lastUpdate: lastUpdate,
+          confirmed,
+          recovered,
+          deaths,
+          lastUpdate,
         });
       });
   }, []);
