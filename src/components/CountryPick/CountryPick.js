@@ -1,7 +1,7 @@
 import React from "react";
 
 const CountryPick = () => {
-  return <div></div>;
+  return <h1>Country pick</h1>;
 };
 
 export default CountryPick;
