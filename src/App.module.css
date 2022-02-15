@@ -1,5 +1,12 @@
 body {
-  background-color: rgb(250, 250, 250);
+  background-image: linear-gradient(
+    to right bottom,
+    #475974,
+    #445a7c,
+    #415c84,
+    #3d5d8c,
+    #3a5e94
+  );
 }
 
 .container {
