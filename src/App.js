@@ -2,6 +2,7 @@ import styles from "./App.module.css";
 import Cards from "./components/Cards/Cards";
 import Chart from "./components/Chart/Chart";
 import CountryPick from "./components/CountryPick/CountryPick";
+import NavBar from "./components/NavBar/NavBar";
 
 import React, { useState, useEffect } from "react";
 const App = () => {
@@ -28,10 +29,13 @@ const App = () => {
   }, []);
   console.log(data);
   return (
-    <div className={styles.container}>
-      <Cards />
-      <CountryPick />
-      <Chart />
+    <div>
+      <NavBar />
+      <div className={styles.container}>
+        <Cards />
+        <CountryPick />
+        <Chart />
+      </div>
     </div>
   );
 };
