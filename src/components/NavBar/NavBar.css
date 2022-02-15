@@ -1,6 +1,17 @@
+.container {
+  margin-top: 10px;
+  display: flex;
+  align-content: space-between;
+}
+
 .child {
   margin-top: 10px;
-
   font-size: larger;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.childish {
+  margin-left: 70%;
+  margin-top: 10px;
+  font-size: larger;
 }
